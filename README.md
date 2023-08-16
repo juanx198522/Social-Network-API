@@ -26,7 +26,17 @@ As a social media startup, I want an API for my social network that uses a NoSQL
 - Users can add and remove friends from their friend lists.
 
 ### Deployed Application Link
-- [https://github.com/juanx198522](https://github.com/juanx198522)
+- The following video shows GET, POST PUT and DEL routes from Users being tested in Insomnia:
+[https://drive.google.com/file/d/1wDL1OHk6qn1iSmKlvpRU8qmbngwHe0aA/view](https://drive.google.com/file/d/1wDL1OHk6qn1iSmKlvpRU8qmbngwHe0aA/view)
+
+- The following video shows GET, POST PUT and DEL routes from Thoughts being tested in Insomnia:
+[https://drive.google.com/file/d/1vrtMrEX_RuwWgKy05bR2id8UQ_SXNOAk/view](https://drive.google.com/file/d/1vrtMrEX_RuwWgKy05bR2id8UQ_SXNOAk/view)
+
+- The following video shows POST and DEL routes from Friends being tested in Insomnia:
+[https://drive.google.com/file/d/1hiMFQbRPACQUQNk2GVli_x9IgiMpwaZY/view](https://drive.google.com/file/d/1hiMFQbRPACQUQNk2GVli_x9IgiMpwaZY/view)
+
+- The following video shows POST and DEL routes from Reactions being tested in Insomnia:
+[https://drive.google.com/file/d/1WCSX5Xz_kflJsB4pFOAOHg1LXPqogTka/view](https://drive.google.com/file/d/1WCSX5Xz_kflJsB4pFOAOHg1LXPqogTka/view)
 
 ### Getting Started
 Before you begin, ensure you have MongoDB installed on your machine. You can follow the MongoDB installation guide on The Full-Stack Blog to install MongoDB locally.

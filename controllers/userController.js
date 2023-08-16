@@ -6,22 +6,22 @@ const UserController = {
   // Get all users from the database
   getAllUsers(req, res) {
     User.find({})
-      .then(userData => res.json(userData)) 
-      .catch(err => res.status(500).json(err)); 
+      .then(userData => res.json(userData))
+      .catch(err => res.status(500).json(err));
   },
 
   // Get a specific user by their ID
   getUserById(req, res) {
     User.findById(req.params.userId)
-      .then(userData => res.json(userData)) 
-      .catch(err => res.status(500).json(err)); 
+      .then(userData => res.json(userData))
+      .catch(err => res.status(500).json(err));
   },
 
   // Create a new user
   createUser(req, res) {
     User.create(req.body)
-      .then(userData => res.json(userData)) 
-      .catch(err => res.status(500).json(err)); 
+      .then(userData => res.json(userData))
+      .catch(err => res.status(500).json(err));
   },
 
   // Update a user by their ID
@@ -31,9 +31,9 @@ const UserController = {
         if (!userData) {
           return res.status(404).json({ message: 'User not found' });
         }
-        res.json(userData); 
+        res.json(userData);
       })
-      .catch(err => res.status(500).json(err)); 
+      .catch(err => res.status(500).json(err));
   },
 
   // Delete a user by their ID
@@ -43,9 +43,9 @@ const UserController = {
         if (!userData) {
           return res.status(404).json({ message: 'User not found' });
         }
-        res.json({ message: 'User deleted successfully' }); 
+        res.json({ message: 'User deleted successfully' });
       })
-      .catch(err => res.status(500).json(err)); 
+      .catch(err => res.status(500).json(err));
   },
 
   // Add a friend to a user's friends list
@@ -59,9 +59,9 @@ const UserController = {
         if (!userData) {
           return res.status(404).json({ message: 'User not found' });
         }
-        res.json(userData); 
+        res.json(userData);
       })
-      .catch(err => res.status(500).json(err)); 
+      .catch(err => res.status(500).json(err));
   },
 
   // Remove a friend from a user's friends list
@@ -77,12 +77,12 @@ const UserController = {
         }
         const removed = !dbUserData.friends.includes(params.friendId);
         if (removed) {
-          res.json({ message: "Friend removed successfully", dbUserData });
+          res.json({ dbUserData, message: "Friend removed successfully" });
         } else {
           res.json(dbUserData);
         }
       })
-      .catch((err) => res.status(400).json(err)); 
+      .catch((err) => res.status(400).json(err));
   },
 };
 
